@@ -1,0 +1,14 @@
+name: 'action-02'
+description: 'Add bug label'
+author: 'John Son'
+inputs: 
+  github_token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+  issue_number:
+    description: 'Issue Number'
+    required: true
+  
+runs:
+  using: 'node12'
+  main: 'action02.js'
